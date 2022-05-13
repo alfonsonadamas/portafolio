@@ -19,8 +19,8 @@
                 <h1 class="heroe__titulo">Hola, bienvenidx a mi portafolio</h1>
                 <p class="heroe__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellat quos at commodi placeat maxime accusamus eaque ea quia id quo facilis ad vitae, dolor veritatis aspernatur sit itaque nesciunt!</p>
                 <div class="heroe__botones">
-                    <a href="" class="boton boton--rojo">Descargar CV</a>
-                    <a href="" class="boton boton--blanco">Contactame</a>
+                    <a href="https://drive.google.com/uc?id=1GgHiintItYKKfh-4vkmpsKQTuVZmp7dl&export=download" class="boton boton--rojo"">Descargar CV</a>
+                    <a href="#formulario" class="boton boton--blanco">Contactame </a>
                 </div>
             </div>
             <figure class="heroe__perfil">
@@ -46,12 +46,17 @@
             </div>
         </section>
         
-        <form class="formulario" action="">
+        <form class="formulario" method="post" action="sendbyemail.php" id="formulario">
             <h2 class="formulario__titulo">Contacto</h2>
-            <input class="formulario__asunto" type="text" placeholder="Asunto">
-            <textarea class="formulario__mensaje" placeholder="Mensaje"></textarea>
+            <input class="formulario__asunto" name = "email" type="text" placeholder="Email">
+            <input class="formulario__asunto" name = "subject" type="text" placeholder="Asunto">
+            <textarea class="formulario__mensaje" name = "body" placeholder="Mensaje"></textarea>
             <button class="boton boton--rojo" type="submit">Enviar</button>
+
+            
         </form>
+
+
     </main>
 
     <footer class="footer">
